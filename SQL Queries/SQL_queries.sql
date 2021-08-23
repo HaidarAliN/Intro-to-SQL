@@ -3,9 +3,9 @@ SELECT type,major FROM `degrees`;
 
 #Select the first name of the instructors who earned an MS degree in Computer Science
 SELECT i.first_name
-from instructors i, degrees d, instructors_degrees instd
+from instructors i, degrees d
 where d.type = 'MS' AND d.major = 'Computer science'
-AND i.id = instd.instructors_id AND d.id = instd.degrees_id;
+AND i.id = d.instructor_id;
 
 #Delete all instructors
 DELETE FROM instructors;
