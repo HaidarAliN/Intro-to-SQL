@@ -10,7 +10,7 @@ AND i.id = d.instructor_id;
 #Delete all instructors
 DELETE FROM instructors;
 DELETE FROM degrees;
-DELETE FROM instructors_degrees;
+
 
 #Insert a new record to this table
 INSERT INTO `instructors`  VALUES (NULL, 'Haidar', 'Nehme');
